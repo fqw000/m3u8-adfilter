@@ -1,6 +1,6 @@
 [AdFilter] ===== ENTRY =====
 [AdFilter]   url: https://v.qq.com/x/cover/mzc00200zsqz54y/l4102dh0nce.html
-[AdFilter]   bytes: 188521
+[AdFilter]   bytes: 188561
 [AdFilter] ===== PARSE =====
 [AdFilter]   segments: 0
 [AdFilter]   duration: 0.0s

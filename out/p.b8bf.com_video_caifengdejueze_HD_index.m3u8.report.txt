@@ -34,14 +34,14 @@
 [AdFilter]   chunk count: 20
 [AdFilter]   context: dominantHost=- medianDur=2.00s
 [AdFilter]   chunk#0(first) n=156 total=300.8s [0.2~3.7] score=-0.25/thr=0.8 => keep {long156+total>90s+naming-reuse}
-[AdFilter]   chunk#1 n=9 total=25.8s [1.8~3] score=0.13/thr=0.6 => keep {long9+disc+url-dev+seq-island}
+[AdFilter]   chunk#1 n=9 total=25.8s [1.8~3] score=1/thr=0.6 => AD(ad-comment)
 [AdFilter]   chunk#2 n=773 total=1484.8s [0.2~3.7] score=-0.1/thr=0.6 => keep {long773+total>90s+disc+naming-reuse}
 [AdFilter]   chunk#3 n=68 total=130.4s [0.4~3.4] score=-0.25/thr=0.6 => keep {long68+total>90s+naming-reuse}
 [AdFilter]   chunk#4 n=113 total=217.1s [0.3~3.7] score=-0.25/thr=0.6 => keep {long113+total>90s+naming-reuse}
 [AdFilter]   chunk#5 n=41 total=78.6s [0.4~3.4] score=0.05/thr=0.6 => keep {long41+naming-reuse}
 [AdFilter]   chunk#6 n=1 total=0.4s [0.4~0.4] score=0.15/thr=0.6 => keep {single+naming-reuse+short-between-long}
 [AdFilter]   chunk#7 n=98 total=189.9s [0.5~3.6] score=-0.25/thr=0.6 => keep {long98+total>90s+naming-reuse}
-[AdFilter]   chunk#8 n=9 total=25.8s [1.8~3] score=0.13/thr=0.6 => keep {long9+disc+url-dev+seq-island}
+[AdFilter]   chunk#8 n=9 total=25.8s [1.8~3] score=1/thr=0.6 => AD(ad-comment)
 [AdFilter]   chunk#9 n=12 total=22.9s [0.5~3.6] score=0.2/thr=0.6 => keep {long12+disc+naming-reuse}
 [AdFilter]   chunk#10 n=106 total=203.6s [0.5~3.6] score=-0.25/thr=0.6 => keep {long106+total>90s+naming-reuse}
 [AdFilter]   chunk#11 n=43 total=82.6s [0.3~3.8] score=0.05/thr=0.6 => keep {long43+naming-reuse}
@@ -54,8 +54,32 @@
 [AdFilter]   chunk#18 n=79 total=149.9s [0.3~3.8] score=-0.25/thr=0.6 => keep {long79+total>90s+naming-reuse}
 [AdFilter]   chunk#19(last) n=165 total=322.4s [0.4~3.7] score=-0.25/thr=0.7 => keep {long165+total>90s+naming-reuse}
 [AdFilter] ===== SUMMARY =====
-[AdFilter]   segments to remove: 0/3018
-[AdFilter]   duration to remove: 0.0s / 5817.3s
-[AdFilter]   reasons: none
-[AdFilter] RESULT: CLEAN (no ad candidate)
-[AdFilter] DECISION: PASSTHROUGH
+[AdFilter]   segments to remove: 18/3018
+[AdFilter]   duration to remove: 51.5s / 5817.3s
+[AdFilter]   reasons: ad-commentx2
+[AdFilter] ===== REMOVED =====
+[AdFilter]   [156] 3s [ad-comment] /20261029/5eVFbUHY/1500kb/hls/sDPtbTtv.ts
+[AdFilter]   [157] 3s [] /20261029/5eVFbUHY/1500kb/hls/1agUTWCw.ts
+[AdFilter]   [158] 3s [] /20261029/5eVFbUHY/1500kb/hls/qAmPJAiJ.ts
+[AdFilter]   [159] 3s [] /20261029/5eVFbUHY/1500kb/hls/YBcKtv5o.ts
+[AdFilter]   [160] 3s [] /20261029/5eVFbUHY/1500kb/hls/qYum9Syl.ts
+[AdFilter]   [161] 3s [] /20261029/5eVFbUHY/1500kb/hls/t5WPcmWi.ts
+[AdFilter]   [162] 3s [] /20261029/5eVFbUHY/1500kb/hls/DakbGNv7.ts
+[AdFilter]   [163] 3s [] /20261029/5eVFbUHY/1500kb/hls/QIud538K.ts
+[AdFilter]   [164] 1.76s [] /20261029/5eVFbUHY/1500kb/hls/c7wHND1R.ts
+[AdFilter]   [1259] 3s [ad-comment] /20261029/5eVFbUHY/1500kb/hls/sDPtbTtv.ts
+[AdFilter]   [1260] 3s [] /20261029/5eVFbUHY/1500kb/hls/1agUTWCw.ts
+[AdFilter]   [1261] 3s [] /20261029/5eVFbUHY/1500kb/hls/qAmPJAiJ.ts
+[AdFilter]   [1262] 3s [] /20261029/5eVFbUHY/1500kb/hls/YBcKtv5o.ts
+[AdFilter]   [1263] 3s [] /20261029/5eVFbUHY/1500kb/hls/qYum9Syl.ts
+[AdFilter]   [1264] 3s [] /20261029/5eVFbUHY/1500kb/hls/t5WPcmWi.ts
+[AdFilter]   [1265] 3s [] /20261029/5eVFbUHY/1500kb/hls/DakbGNv7.ts
+[AdFilter]   [1266] 3s [] /20261029/5eVFbUHY/1500kb/hls/QIud538K.ts
+[AdFilter]   [1267] 1.76s [] /20261029/5eVFbUHY/1500kb/hls/c7wHND1R.ts
+[AdFilter] ===== REBUILD =====
+[AdFilter]   MEDIA-SEQUENCE: untouched
+[AdFilter]   lines: 5/6050 -> 6008
+[AdFilter]   body bytes: 72025 -> 70975
+[AdFilter]   verify: ok (segments=3000, disc=2)
+[AdFilter] RESULT: CHANGED (removed 18 segs / 51.5s)
+[AdFilter] DECISION: CHANGED

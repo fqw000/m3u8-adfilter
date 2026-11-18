@@ -1,0 +1,57 @@
+--- m3u8-adfilter/lib/filter-playlist.js	2026-11-18 05:28:55.129203863 +0000
++++ adfilter-proto/lib/filter-playlist.js	2026-11-18 05:36:45.142162707 +0000
+@@ -75,6 +75,7 @@
+   useNamingReuse: true,
+   useMirrorReuse: true,
+   useChunkScoring: true,
++  useCommentMarker: true,
+ 
+   /* ---- 阈值 ---- */
+   baseThreshold: 0.60,
+@@ -366,6 +367,26 @@
+   }
+ }
+ 
++/* ======================= 私有注释标记 ======================= */
++
++// PPVOD 等在清单里写「# ppvod-ad-injected v1」作为广告块起点（xlsx AD-02）。
++// 这类非标准注释行是强证据：命中即把所属块整体判为广告。
++const AD_COMMENT_RE = /ad[-_]?(inject|insert|mark|marker)|ppvod|guanggao|adseg|插播|广告/i;
++
++function detectCommentMarkers(nodes, cfg) {
++  if (!cfg.useCommentMarker) return;
++  for (const n of nodes) {
++    for (const tag of n.tags) {
++      const t = tag.trim();
++      if (t[0] !== '#' || t.indexOf('#EXT') === 0) continue; // 只看非标准注释行
++      if (AD_COMMENT_RE.test(t)) {
++        n.reasons.push('ad-comment');
++        break;
++      }
++    }
++  }
++}
++
+ /* ======================= 分块与打分 ======================= */
+ 
+ function buildChunks(nodes, cfg) {
+@@ -411,8 +432,10 @@
+   const scteRatio = chunk.filter((s) => s.scte).length / n;
+   const keynoneRatio = ratioWith(chunk, 'keynone');
+   const ruleRatio = chunk.filter((s) => s.ruleHits && s.ruleHits.length).length / n;
++  const commentHit = cfg.useCommentMarker && chunk.some((s) => s.reasons.indexOf('ad-comment') >= 0);
+ 
+-  if (cfg.useScte && scteRatio >= 0.5) strong = 'scte';
++  if (cfg.useCommentMarker && commentHit) strong = 'ad-comment';
++  else if (cfg.useScte && scteRatio >= 0.5) strong = 'scte';
+   else if (cfg.useKeyNone && keynoneRatio >= 0.5) strong = 'keynone';
+   else if (cfg.useRules && ruleRatio >= 0.5 && shortShape && n <= cfg.maxAdBlockSegments) strong = 'rule';
+ 
+@@ -691,6 +714,7 @@
+   }
+ 
+   /* ---------- 启发式 ---------- */
++  if (cfg.useCommentMarker) detectCommentMarkers(nodes, cfg);
+   if (st.encrypted) {
+     if (cfg.useKeyNone) detectKeyNone(nodes, cfg);
+   } else {
