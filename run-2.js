@@ -7,9 +7,9 @@
 
 const fs = require('fs');
 const path = require('path');
-const { filterPlaylist } = require('../lib/filter-playlist');
+const { filterPlaylist } = require('./lib/filter-playlist');
 
-const DIR = path.resolve(__dirname, '..', 'fixtures');
+const DIR = path.resolve(__dirname, '.', 'fixtures');
 const verbose = process.argv.includes('-v');
 const expects = JSON.parse(fs.readFileSync(path.join(DIR, 'expect.json'), 'utf8'));
 

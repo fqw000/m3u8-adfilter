@@ -9,11 +9,13 @@ m3u8-adfilter/
 ├── lib/filter-playlist.js     核心：解析 → 闸门 → 检测 → 打分 → 重建 → 自校验
 ├── bin/run.js                 命令行：抓远程 / 读本地 / 批量 / 落盘
 ├── test/
-│   ├── run.js                 离线回归：fixtures 全量比对期望
-│   ├── make-fixtures.js        生成 12 种广告插入形态的样本
-│   └── mutate-real.js          在真实清单上注入广告，验证真实结构下的表现
-├── fixtures/                   合成样本 + real/（真实底稿）
+│   └──  run.js                 离线回归：fixtures 全量比对期望
 └── out/                        过滤后的 m3u8 + 报告
+├── sgmodules/
+│   └──m3u8AdFilter.sgmodule    surge模块
+│   └──m3u8AdFilter.js          surge模块配套js
+
+
 ```
 
 ## 跑起来
@@ -36,14 +38,6 @@ node bin/run.js --url "https://..." --dry-run --verbose
 ```
 
 产物：`out/<slug>.report.txt`（完整日志）、`out/<slug>.filtered.m3u8`（仅在改动时生成）、`out/summary.json`（加 `--json` 时）。
-
-## 三道离线回归
-
-```bash
-node test/make-fixtures.js   # 生成样本
-node test/run.js             # 12 种广告形态，比对期望
-node test/mutate-real.js     # 真实清单 + 注入广告
-```
 
 ## 核心设计（为什么不是"打标签就删行"）
 
@@ -102,3 +96,4 @@ else {
 ```
 
 Surge 不支持 `require`，把 `lib` 内容直接内联到脚本里即可（保持"纯函数 + 胶水"两层，方便以后继续在本地回归）。
+已配置sgmodule

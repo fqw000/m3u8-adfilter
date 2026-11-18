@@ -1,0 +1,47 @@
+#!name = m3u8AdFilter
+#!desc = 由 m3u8-adfilter 内核生成的 Surge 模块：规则 + SCTE + 私有注释标记 + DISCONTINUITY 分块打分 + 结构守恒 + 弱信号结构佐证门槛。测试时请关闭 App 内"去广告"开关。
+
+[Rule]
+# 请求级广告/统计域名拦截（与 MarcoMovie 内置规则 blockedDomains 一致）
+DOMAIN-SUFFIX,doubleclick.net,REJECT
+DOMAIN-SUFFIX,googlesyndication.com,REJECT
+DOMAIN-SUFFIX,adservice.google.com,REJECT
+DOMAIN-SUFFIX,googleadservices.com,REJECT
+DOMAIN-SUFFIX,googletagmanager.com,REJECT
+DOMAIN-SUFFIX,googletagservices.com,REJECT
+DOMAIN-SUFFIX,google-analytics.com,REJECT
+DOMAIN-SUFFIX,scorecardresearch.com,REJECT
+DOMAIN-SUFFIX,moatads.com,REJECT
+DOMAIN-SUFFIX,adsrvr.org,REJECT
+DOMAIN-SUFFIX,adnxs.com,REJECT
+DOMAIN-SUFFIX,rubiconproject.com,REJECT
+DOMAIN-SUFFIX,pubmatic.com,REJECT
+DOMAIN-SUFFIX,openx.net,REJECT
+DOMAIN-SUFFIX,criteo.com,REJECT
+DOMAIN-SUFFIX,criteo.net,REJECT
+DOMAIN-SUFFIX,taboola.com,REJECT
+DOMAIN-SUFFIX,outbrain.com,REJECT
+DOMAIN-SUFFIX,adform.net,REJECT
+DOMAIN-SUFFIX,advertising.com,REJECT
+DOMAIN-SUFFIX,adroll.com,REJECT
+DOMAIN-SUFFIX,casalemedia.com,REJECT
+DOMAIN-SUFFIX,quantserve.com,REJECT
+DOMAIN-SUFFIX,chartbeat.com,REJECT
+DOMAIN-SUFFIX,amazon-adsystem.com,REJECT
+DOMAIN-SUFFIX,adcolony.com,REJECT
+DOMAIN-SUFFIX,vungle.com,REJECT
+DOMAIN-SUFFIX,applovin.com,REJECT
+DOMAIN-SUFFIX,inmobi.com,REJECT
+DOMAIN-SUFFIX,smaato.net,REJECT
+DOMAIN-SUFFIX,zedo.com,REJECT
+
+[MITM]
+# 测试用：对全部 HTTPS 域名做 MITM，才能抓到任意源的 m3u8。
+# 需开启 MITM 并信任 Surge 根证书；正式使用可收窄为实际片源域名。
+# 请务必根据需要自行配置 hostname
+hostname = %APPEND% vip.lz-cdn13.com,vip.lzcdn2.com,vip1.lz-cdn5.com,bfikuncdn.com,c1.ddbbffcdn.com,c1.rrcdnbf6.com,hd.kuktxu.com,hn.bfvvs.com,p.b8bf.com,p.bvvvvvvvvv1f.com,play.hhuus.com,play.modujx17.com,play.xluuss.com,player.yzzyvip-35.com,super.ffzy-online6.com,svip.ryiplay18.com,svip.xgplay17.com,v.fengbao14.com,v.lfthirtytwo.com,v.lzcdn27.com,v.qq.com,v13.zuidazym3u8.com,v3.ppqrrs.com,vip.dytt-kan.com,vip.lz-cdn3.com,vod1.maowushi.com,vv.jisuzyv.com
+[Script]
+# 主入口：URL 以 .m3u8 结尾（含查询串）的媒体播放列表
+MarcoMovie-AdFilter = type=http-response, pattern=^https?://[^?#]*\.m3u8($|[?#]), script-path=MarcoMovie-AdFilter.js, requires-body=true, max-size=524288
+# 备选（可选开启）：无 .m3u8 扩展名的播放列表（脚本会自行校验 #EXTM3U，非 m3u8 立即放行）
+# MarcoMovie-AdFilter-ext = type=http-response, pattern=^https?://[^?#]*(/hls/|/m3u8/|/vod/|/voddrm/|/live/|/stream/)[^?#]*$, script-path=MarcoMovie-AdFilter.js, requires-body=true, max-size=524288
