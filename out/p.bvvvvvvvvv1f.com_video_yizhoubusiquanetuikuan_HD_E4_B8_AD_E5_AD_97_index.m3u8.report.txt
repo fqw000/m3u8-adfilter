@@ -1,0 +1,238 @@
+[AdFilter] ===== ENTRY =====
+[AdFilter]   url: https://p.bvvvvvvvvv1f.com/video/yizhoubusiquanetuikuan/HD%E4%B8%AD%E5%AD%97/index.m3u8
+[AdFilter]   bytes: 31719
+[AdFilter] ===== PARSE =====
+[AdFilter]   segments: 1310
+[AdFilter]   duration: 5219.7s
+[AdFilter]   master: false
+[AdFilter]   endlist: true
+[AdFilter] ===== ENV =====
+[AdFilter]   playlist host: p.bvvvvvvvvv1f.com
+[AdFilter]   encrypted: no
+[AdFilter]   implicit IV: no
+[AdFilter]   implicit byterange: no
+[AdFilter] ===== RULE STATS =====
+[AdFilter]   rule count: 16
+[AdFilter]   [DEAD] keyword:sponsor  hits=0 miss=1310  sponsor
+[AdFilter]   [DEAD] keyword:promo  hits=0 miss=1310  promo
+[AdFilter]   [DEAD] keyword:splash  hits=0 miss=1310  splash
+[AdFilter]   [DEAD] keyword:vip_ad  hits=0 miss=1310  vip_ad
+[AdFilter]   [DEAD] keyword:advert  hits=0 miss=1310  advert
+[AdFilter]   [DEAD] keyword:advertisement  hits=0 miss=1310  advertisement
+[AdFilter]   [DEAD] keyword:interstitial  hits=0 miss=1310  interstitial
+[AdFilter]   [DEAD] keyword:redtraffic  hits=0 miss=1310  redtraffic
+[AdFilter]   [DEAD] keyword:preroll  hits=0 miss=1310  preroll
+[AdFilter]   [DEAD] keyword:midroll  hits=0 miss=1310  midroll
+[AdFilter]   [DEAD] regex:\/ad\/  hits=0 miss=1310  /\/ad\//
+[AdFilter]   [DEAD] regex:\/ads\/  hits=0 miss=1310  /\/ads\//
+[AdFilter]   [DEAD] regex:\/adv\/  hits=0 miss=1310  /\/adv\//
+[AdFilter]   [DEAD] regex:_ad_  hits=0 miss=1310  /_ad_/
+[AdFilter]   [DEAD] regex:_ads_  hits=0 miss=1310  /_ads_/
+[AdFilter]   [HIT] regex:\/adjump  hits=18 miss=1292  /\/adjump/ segs=[75,76,77,78,79,80,81,82,…]
+[AdFilter]   summary: effective=1 dead=15 total=16
+[AdFilter] ===== CHUNKS =====
+[AdFilter]   chunk count: 173
+[AdFilter]   context: dominantHost=- medianDur=4.00s
+[AdFilter]   chunk#0(first) n=10 total=40.1s [2.8~6] score=-0.05/thr=0.8 => keep {long10+disc}
+[AdFilter]   chunk#1 n=1 total=7.1s [7.1~7.1] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#2 n=9 total=34.8s [2.5~6.2] score=-0.2/thr=0.6 => keep {long9}
+[AdFilter]   chunk#3 n=10 total=41s [2.7~5.8] score=-0.2/thr=0.6 => keep {long10}
+[AdFilter]   chunk#4 n=1 total=1.3s [1.3~1.3] score=-0.1/thr=0.6 => keep {single+short-between-long}
+[AdFilter]   chunk#5 n=15 total=62.2s [2.4~6] score=-0.2/thr=0.6 => keep {long15}
+[AdFilter]   chunk#6 n=3 total=9.6s [1.8~4] score=0.2/thr=0.6 => keep {short-between-long}
+[AdFilter]   chunk#7 n=1 total=7.4s [7.4~7.4] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#8 n=25 total=98s [1.3~6.5] score=-0.5/thr=0.6 => keep {long25+total>90s}
+[AdFilter]   chunk#9 n=9 total=25.8s [1.8~3] score=0.63/thr=0.6 => AD {long9+disc+url-dev+seq-island+rule-weak}
+[AdFilter]   chunk#10 n=12 total=49.7s [2.6~5.9] score=-0.05/thr=0.6 => keep {long12+disc}
+[AdFilter]   chunk#11 n=1 total=0.6s [0.6~0.6] score=-0.1/thr=0.6 => keep {single+short-between-long}
+[AdFilter]   chunk#12 n=1 total=7s [7~7] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#13 n=35 total=137.1s [2~6.6] score=-0.5/thr=0.6 => keep {long35+total>90s}
+[AdFilter]   chunk#14 n=1 total=7s [7~7] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#15 n=9 total=32.8s [1.2~5.7] score=-0.2/thr=0.6 => keep {long9}
+[AdFilter]   chunk#16 n=1 total=7.9s [7.9~7.9] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#17 n=13 total=51.1s [2~6.2] score=-0.2/thr=0.6 => keep {long13}
+[AdFilter]   chunk#18 n=5 total=17.3s [1.2~5.3] score=0/thr=0.6 => keep
+[AdFilter]   chunk#19 n=10 total=43.2s [1.9~6.9] score=-0.2/thr=0.6 => keep {long10}
+[AdFilter]   chunk#20 n=19 total=73s [2.4~6.1] score=-0.2/thr=0.6 => keep {long19}
+[AdFilter]   chunk#21 n=1 total=7.2s [7.2~7.2] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#22 n=4 total=15.6s [2.4~6] score=0/thr=0.6 => keep
+[AdFilter]   chunk#23 n=2 total=5.2s [2.1~3] score=0.2/thr=0.6 => keep {short-between-long}
+[AdFilter]   chunk#24 n=4 total=15.9s [1.8~5.4] score=0/thr=0.6 => keep
+[AdFilter]   chunk#25 n=6 total=26.4s [3.6~5.9] score=0/thr=0.6 => keep
+[AdFilter]   chunk#26 n=5 total=17.6s [2.5~4.6] score=0/thr=0.6 => keep
+[AdFilter]   chunk#27 n=1 total=7.5s [7.5~7.5] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#28 n=16 total=60.7s [2.6~5.3] score=-0.2/thr=0.6 => keep {long16}
+[AdFilter]   chunk#29 n=1 total=6.3s [6.3~6.3] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#30 n=1 total=1.4s [1.4~1.4] score=-0.1/thr=0.6 => keep {single+short-between-long}
+[AdFilter]   chunk#31 n=12 total=48.5s [2.8~6] score=-0.2/thr=0.6 => keep {long12}
+[AdFilter]   chunk#32 n=2 total=10.8s [4~6.8] score=0.2/thr=0.6 => keep {short}
+[AdFilter]   chunk#33 n=1 total=0.7s [0.7~0.7] score=-0.1/thr=0.6 => keep {single+short-between-long}
+[AdFilter]   chunk#34 n=12 total=48.1s [3~5.6] score=-0.2/thr=0.6 => keep {long12}
+[AdFilter]   chunk#35 n=1 total=6.7s [6.7~6.7] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#36 n=7 total=28.6s [2.7~6.2] score=0/thr=0.6 => keep
+[AdFilter]   chunk#37 n=1 total=0.6s [0.6~0.6] score=-0.1/thr=0.6 => keep {single+short-between-long}
+[AdFilter]   chunk#38 n=1 total=7.5s [7.5~7.5] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#39 n=1 total=1.6s [1.6~1.6] score=-0.1/thr=0.6 => keep {single+short-between-long}
+[AdFilter]   chunk#40 n=4 total=15.2s [2.3~5.2] score=0/thr=0.6 => keep
+[AdFilter]   chunk#41 n=1 total=6.4s [6.4~6.4] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#42 n=6 total=23.7s [3~5.9] score=0/thr=0.6 => keep
+[AdFilter]   chunk#43 n=3 total=12s [2.1~6] score=0/thr=0.6 => keep
+[AdFilter]   chunk#44 n=20 total=79.2s [2.9~5.7] score=-0.2/thr=0.6 => keep {long20}
+[AdFilter]   chunk#45 n=9 total=38s [2~6.6] score=-0.2/thr=0.6 => keep {long9}
+[AdFilter]   chunk#46 n=1 total=0.9s [0.9~0.9] score=-0.1/thr=0.6 => keep {single+short-between-long}
+[AdFilter]   chunk#47 n=4 total=15.2s [2.5~4.8] score=0/thr=0.6 => keep
+[AdFilter]   chunk#48 n=10 total=40.1s [1.2~5.9] score=-0.2/thr=0.6 => keep {long10}
+[AdFilter]   chunk#49 n=12 total=48s [1.2~6.2] score=-0.2/thr=0.6 => keep {long12}
+[AdFilter]   chunk#50 n=19 total=79.1s [2.9~5.4] score=-0.2/thr=0.6 => keep {long19}
+[AdFilter]   chunk#51 n=6 total=23.8s [1.7~6] score=0/thr=0.6 => keep
+[AdFilter]   chunk#52 n=97 total=387.5s [1.2~6.4] score=-0.5/thr=0.6 => keep {long97+total>90s}
+[AdFilter]   chunk#53 n=3 total=11.9s [1.8~6.5] score=0/thr=0.6 => keep
+[AdFilter]   chunk#54 n=1 total=1.8s [1.8~1.8] score=-0.1/thr=0.6 => keep {single+short-between-long}
+[AdFilter]   chunk#55 n=7 total=30.2s [3~6.1] score=0/thr=0.6 => keep
+[AdFilter]   chunk#56 n=4 total=14.2s [1.6~5.6] score=0/thr=0.6 => keep
+[AdFilter]   chunk#57 n=1 total=6.6s [6.6~6.6] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#58 n=1 total=0.7s [0.7~0.7] score=-0.1/thr=0.6 => keep {single+short-between-long}
+[AdFilter]   chunk#59 n=26 total=107.1s [2.5~6.6] score=-0.5/thr=0.6 => keep {long26+total>90s}
+[AdFilter]   chunk#60 n=1 total=1.1s [1.1~1.1] score=-0.1/thr=0.6 => keep {single+short-between-long}
+[AdFilter]   chunk#61 n=1 total=6.7s [6.7~6.7] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#62 n=2 total=5.3s [2.4~2.9] score=0.2/thr=0.6 => keep {short-between-long}
+[AdFilter]   chunk#63 n=12 total=48s [2~6.1] score=-0.2/thr=0.6 => keep {long12}
+[AdFilter]   chunk#64 n=21 total=86.7s [2.6~6.1] score=-0.2/thr=0.6 => keep {long21}
+[AdFilter]   chunk#65 n=1 total=2.6s [2.6~2.6] score=-0.1/thr=0.6 => keep {single+short-between-long}
+[AdFilter]   chunk#66 n=13 total=52.5s [1.1~6.3] score=-0.2/thr=0.6 => keep {long13}
+[AdFilter]   chunk#67 n=5 total=18.2s [2.2~4.2] score=0/thr=0.6 => keep
+[AdFilter]   chunk#68 n=1 total=7.1s [7.1~7.1] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#69 n=2 total=8s [4~4] score=0.4/thr=0.6 => keep {uniform-short}
+[AdFilter]   chunk#70 n=1 total=0.9s [0.9~0.9] score=-0.1/thr=0.6 => keep {single+short-between-long}
+[AdFilter]   chunk#71 n=1 total=7.1s [7.1~7.1] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#72 n=1 total=4s [4~4] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#73 n=1 total=0.8s [0.8~0.8] score=-0.1/thr=0.6 => keep {single+short-between-long}
+[AdFilter]   chunk#74 n=27 total=108s [1.9~5.8] score=-0.5/thr=0.6 => keep {long27+total>90s}
+[AdFilter]   chunk#75 n=1 total=6.2s [6.2~6.2] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#76 n=13 total=51s [1.9~6] score=-0.2/thr=0.6 => keep {long13}
+[AdFilter]   chunk#77 n=9 total=25.8s [1.8~3] score=0.63/thr=0.6 => AD {long9+disc+url-dev+seq-island+rule-weak}
+[AdFilter]   chunk#78 n=31 total=122.9s [2.5~6.3] score=-0.35/thr=0.6 => keep {long31+total>90s+disc}
+[AdFilter]   chunk#79 n=1 total=6.2s [6.2~6.2] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#80 n=11 total=41.6s [1.8~5.5] score=-0.2/thr=0.6 => keep {long11}
+[AdFilter]   chunk#81 n=11 total=47.2s [2.5~6.6] score=-0.2/thr=0.6 => keep {long11}
+[AdFilter]   chunk#82 n=11 total=40.9s [1.7~4] score=-0.2/thr=0.6 => keep {long11}
+[AdFilter]   chunk#83 n=1 total=7.8s [7.8~7.8] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#84 n=2 total=4.1s [2~2.1] score=0.2/thr=0.6 => keep {short-between-long}
+[AdFilter]   chunk#85 n=4 total=19.5s [4~6.2] score=0.2/thr=0.6 => keep {short}
+[AdFilter]   chunk#86 n=10 total=37.1s [1.5~5.8] score=-0.2/thr=0.6 => keep {long10}
+[AdFilter]   chunk#87 n=3 total=14.8s [3.8~6.2] score=0/thr=0.6 => keep
+[AdFilter]   chunk#88 n=26 total=103.4s [1.5~6.7] score=-0.5/thr=0.6 => keep {long26+total>90s}
+[AdFilter]   chunk#89 n=4 total=15.4s [2.3~5.2] score=0/thr=0.6 => keep
+[AdFilter]   chunk#90 n=12 total=45.8s [1.9~5.4] score=-0.2/thr=0.6 => keep {long12}
+[AdFilter]   chunk#91 n=1 total=7.1s [7.1~7.1] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#92 n=9 total=33s [2.1~4] score=0/thr=0.6 => keep {long9+short-between-long}
+[AdFilter]   chunk#93 n=1 total=6.8s [6.8~6.8] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#94 n=1 total=2.7s [2.7~2.7] score=-0.1/thr=0.6 => keep {single+short-between-long}
+[AdFilter]   chunk#95 n=4 total=14.9s [1.6~6] score=0/thr=0.6 => keep
+[AdFilter]   chunk#96 n=1 total=7.1s [7.1~7.1] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#97 n=1 total=4s [4~4] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#98 n=1 total=0.7s [0.7~0.7] score=-0.1/thr=0.6 => keep {single+short-between-long}
+[AdFilter]   chunk#99 n=1 total=3.8s [3.8~3.8] score=-0.3/thr=0.6 => keep {single}
+[AdFilter]   chunk#100 n=4 total=17.3s [2.9~6.8] score=0/thr=0.6 => keep
+[AdFilter]   chunk#101 n=1 total=6.4s [6.4~6.4] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#102 n=1 total=0.9s [0.9~0.9] score=-0.1/thr=0.6 => keep {single+short-between-long}
+[AdFilter]   chunk#103 n=1 total=6.6s [6.6~6.6] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#104 n=35 total=136.6s [2.2~5.9] score=-0.5/thr=0.6 => keep {long35+total>90s}
+[AdFilter]   chunk#105 n=1 total=7.6s [7.6~7.6] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#106 n=20 total=76.5s [1.9~4.6] score=0/thr=0.6 => keep {long20+short-between-long}
+[AdFilter]   chunk#107 n=1 total=7.2s [7.2~7.2] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#108 n=16 total=63.3s [2.4~4.9] score=-0.2/thr=0.6 => keep {long16}
+[AdFilter]   chunk#109 n=30 total=121s [1.4~6.6] score=-0.5/thr=0.6 => keep {long30+total>90s}
+[AdFilter]   chunk#110 n=14 total=55.4s [1.9~6.4] score=-0.2/thr=0.6 => keep {long14}
+[AdFilter]   chunk#111 n=13 total=52.2s [2.4~6.9] score=-0.2/thr=0.6 => keep {long13}
+[AdFilter]   chunk#112 n=1 total=0.9s [0.9~0.9] score=-0.1/thr=0.6 => keep {single+short-between-long}
+[AdFilter]   chunk#113 n=5 total=20.3s [2.4~5.8] score=0/thr=0.6 => keep
+[AdFilter]   chunk#114 n=1 total=7.5s [7.5~7.5] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#115 n=2 total=7.8s [3.8~4] score=0/thr=0.6 => keep
+[AdFilter]   chunk#116 n=1 total=0.6s [0.6~0.6] score=-0.1/thr=0.6 => keep {single+short-between-long}
+[AdFilter]   chunk#117 n=5 total=20.4s [3.8~5] score=0/thr=0.6 => keep
+[AdFilter]   chunk#118 n=2 total=10.9s [4~6.9] score=0.2/thr=0.6 => keep {short}
+[AdFilter]   chunk#119 n=1 total=0.7s [0.7~0.7] score=-0.1/thr=0.6 => keep {single+short-between-long}
+[AdFilter]   chunk#120 n=1 total=6.6s [6.6~6.6] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#121 n=3 total=12.7s [2.8~5.9] score=0/thr=0.6 => keep
+[AdFilter]   chunk#122 n=5 total=16.7s [2.4~5.3] score=0/thr=0.6 => keep
+[AdFilter]   chunk#123 n=1 total=7.5s [7.5~7.5] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#124 n=1 total=0.9s [0.9~0.9] score=-0.1/thr=0.6 => keep {single+short-between-long}
+[AdFilter]   chunk#125 n=1 total=7.2s [7.2~7.2] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#126 n=15 total=56.6s [2.7~6] score=-0.2/thr=0.6 => keep {long15}
+[AdFilter]   chunk#127 n=9 total=36s [1.8~6.1] score=-0.2/thr=0.6 => keep {long9}
+[AdFilter]   chunk#128 n=1 total=7.6s [7.6~7.6] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#129 n=14 total=54.1s [1.5~5.8] score=-0.2/thr=0.6 => keep {long14}
+[AdFilter]   chunk#130 n=1 total=2s [2~2] score=-0.1/thr=0.6 => keep {single+short-between-long}
+[AdFilter]   chunk#131 n=12 total=51s [2.8~6.4] score=-0.2/thr=0.6 => keep {long12}
+[AdFilter]   chunk#132 n=1 total=1.1s [1.1~1.1] score=-0.1/thr=0.6 => keep {single+short-between-long}
+[AdFilter]   chunk#133 n=1 total=7.3s [7.3~7.3] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#134 n=3 total=9.2s [1.6~4] score=0.2/thr=0.6 => keep {short-between-long}
+[AdFilter]   chunk#135 n=1 total=7.1s [7.1~7.1] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#136 n=18 total=70.8s [1.8~6.6] score=-0.2/thr=0.6 => keep {long18}
+[AdFilter]   chunk#137 n=1 total=1.6s [1.6~1.6] score=-0.1/thr=0.6 => keep {single+short-between-long}
+[AdFilter]   chunk#138 n=9 total=39s [3.3~5.5] score=-0.2/thr=0.6 => keep {long9}
+[AdFilter]   chunk#139 n=1 total=2.2s [2.2~2.2] score=-0.1/thr=0.6 => keep {single+short-between-long}
+[AdFilter]   chunk#140 n=1 total=6.4s [6.4~6.4] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#141 n=1 total=1s [1~1] score=-0.1/thr=0.6 => keep {single+short-between-long}
+[AdFilter]   chunk#142 n=1 total=4s [4~4] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#143 n=1 total=7s [7~7] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#144 n=11 total=40.8s [1.3~5.2] score=-0.2/thr=0.6 => keep {long11}
+[AdFilter]   chunk#145 n=1 total=6.6s [6.6~6.6] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#146 n=17 total=65.3s [1.8~5.8] score=-0.2/thr=0.6 => keep {long17}
+[AdFilter]   chunk#147 n=6 total=27.2s [2.5~6] score=0/thr=0.6 => keep
+[AdFilter]   chunk#148 n=14 total=52.6s [1.4~6.2] score=-0.2/thr=0.6 => keep {long14}
+[AdFilter]   chunk#149 n=2 total=11.6s [5.7~6] score=0.4/thr=0.6 => keep {uniform-short}
+[AdFilter]   chunk#150 n=11 total=40.4s [1.5~5.9] score=-0.2/thr=0.6 => keep {long11}
+[AdFilter]   chunk#151 n=3 total=15.3s [4~6.6] score=0.2/thr=0.6 => keep {short}
+[AdFilter]   chunk#152 n=8 total=32.4s [1.6~6.2] score=0/thr=0.6 => keep
+[AdFilter]   chunk#153 n=17 total=64.2s [2.4~5.3] score=-0.2/thr=0.6 => keep {long17}
+[AdFilter]   chunk#154 n=5 total=20.4s [2.7~5.8] score=0/thr=0.6 => keep
+[AdFilter]   chunk#155 n=1 total=7.3s [7.3~7.3] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#156 n=11 total=40.5s [2.2~4.4] score=-0.2/thr=0.6 => keep {long11}
+[AdFilter]   chunk#157 n=9 total=36.1s [2.7~5.8] score=-0.2/thr=0.6 => keep {long9}
+[AdFilter]   chunk#158 n=10 total=43s [2.8~5.8] score=-0.2/thr=0.6 => keep {long10}
+[AdFilter]   chunk#159 n=1 total=0.6s [0.6~0.6] score=-0.1/thr=0.6 => keep {single+short-between-long}
+[AdFilter]   chunk#160 n=9 total=36.4s [3.4~5] score=-0.2/thr=0.6 => keep {long9}
+[AdFilter]   chunk#161 n=1 total=7.2s [7.2~7.2] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#162 n=1 total=2.2s [2.2~2.2] score=-0.1/thr=0.6 => keep {single+short-between-long}
+[AdFilter]   chunk#163 n=1 total=5.6s [5.6~5.6] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#164 n=3 total=9s [2.3~4] score=0/thr=0.6 => keep
+[AdFilter]   chunk#165 n=9 total=35.8s [2.2~6.8] score=-0.2/thr=0.6 => keep {long9}
+[AdFilter]   chunk#166 n=36 total=144.6s [2.2~6.4] score=-0.5/thr=0.6 => keep {long36+total>90s}
+[AdFilter]   chunk#167 n=1 total=7.2s [7.2~7.2] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#168 n=1 total=0.7s [0.7~0.7] score=-0.1/thr=0.6 => keep {single+short-between-long}
+[AdFilter]   chunk#169 n=1 total=6.2s [6.2~6.2] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#170 n=29 total=114s [2.3~6.2] score=-0.5/thr=0.6 => keep {long29+total>90s}
+[AdFilter]   chunk#171 n=1 total=7s [7~7] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#172(last) n=67 total=264.5s [3~4] score=-0.5/thr=0.7 => keep {long67+total>90s}
+[AdFilter] ===== SUMMARY =====
+[AdFilter]   segments to remove: 18/1310
+[AdFilter]   duration to remove: 51.5s / 5219.7s
+[AdFilter]   reasons: rule:regex:\/adjumpx18
+[AdFilter] ===== REMOVED =====
+[AdFilter]   [75] 3s [rule:regex:\/adjump] /video/adjump/time/17932818683880000000.ts
+[AdFilter]   [76] 3s [rule:regex:\/adjump] /video/adjump/time/17932818683880000001.ts
+[AdFilter]   [77] 3s [rule:regex:\/adjump] /video/adjump/time/17932818683880000002.ts
+[AdFilter]   [78] 3s [rule:regex:\/adjump] /video/adjump/time/17932818683890000003.ts
+[AdFilter]   [79] 3s [rule:regex:\/adjump] /video/adjump/time/17932818683890000004.ts
+[AdFilter]   [80] 3s [rule:regex:\/adjump] /video/adjump/time/17932818683890000005.ts
+[AdFilter]   [81] 3s [rule:regex:\/adjump] /video/adjump/time/17932818683890000006.ts
+[AdFilter]   [82] 3s [rule:regex:\/adjump] /video/adjump/time/17932818683890000007.ts
+[AdFilter]   [83] 1.76s [rule:regex:\/adjump] /video/adjump/time/17932818683890000008.ts
+[AdFilter]   [609] 3s [rule:regex:\/adjump] /video/adjump/time/17932818683880000000.ts
+[AdFilter]   [610] 3s [rule:regex:\/adjump] /video/adjump/time/17932818683880000001.ts
+[AdFilter]   [611] 3s [rule:regex:\/adjump] /video/adjump/time/17932818683880000002.ts
+[AdFilter]   [612] 3s [rule:regex:\/adjump] /video/adjump/time/17932818683890000003.ts
+[AdFilter]   [613] 3s [rule:regex:\/adjump] /video/adjump/time/17932818683890000004.ts
+[AdFilter]   [614] 3s [rule:regex:\/adjump] /video/adjump/time/17932818683890000005.ts
+[AdFilter]   [615] 3s [rule:regex:\/adjump] /video/adjump/time/17932818683890000006.ts
+[AdFilter]   [616] 3s [rule:regex:\/adjump] /video/adjump/time/17932818683890000007.ts
+[AdFilter]   [617] 1.76s [rule:regex:\/adjump] /video/adjump/time/17932818683890000008.ts
+[AdFilter] ===== REBUILD =====
+[AdFilter]   MEDIA-SEQUENCE: untouched
+[AdFilter]   lines: 5/2632 -> 2593
+[AdFilter]   body bytes: 31719 -> 30698
+[AdFilter]   verify: ok (segments=1292, disc=3)
+[AdFilter] RESULT: CHANGED (removed 18 segs / 51.5s)
+[AdFilter] DECISION: CHANGED

@@ -1,0 +1,79 @@
+[AdFilter] ===== ENTRY =====
+[AdFilter]   url: https://v.fengbao14.com/video/zoumashangren/9ab68d70fe8d/index.m3u8
+[AdFilter]   bytes: 15186
+[AdFilter] ===== PARSE =====
+[AdFilter]   segments: 627
+[AdFilter]   duration: 1879.4s
+[AdFilter]   master: false
+[AdFilter]   endlist: true
+[AdFilter] ===== ENV =====
+[AdFilter]   playlist host: v.fengbao14.com
+[AdFilter]   encrypted: no
+[AdFilter]   implicit IV: no
+[AdFilter]   implicit byterange: no
+[AdFilter] ===== RULE STATS =====
+[AdFilter]   rule count: 16
+[AdFilter]   [DEAD] keyword:sponsor  hits=0 miss=627  sponsor
+[AdFilter]   [DEAD] keyword:promo  hits=0 miss=627  promo
+[AdFilter]   [DEAD] keyword:splash  hits=0 miss=627  splash
+[AdFilter]   [DEAD] keyword:vip_ad  hits=0 miss=627  vip_ad
+[AdFilter]   [DEAD] keyword:advert  hits=0 miss=627  advert
+[AdFilter]   [DEAD] keyword:advertisement  hits=0 miss=627  advertisement
+[AdFilter]   [DEAD] keyword:interstitial  hits=0 miss=627  interstitial
+[AdFilter]   [DEAD] keyword:redtraffic  hits=0 miss=627  redtraffic
+[AdFilter]   [DEAD] keyword:preroll  hits=0 miss=627  preroll
+[AdFilter]   [DEAD] keyword:midroll  hits=0 miss=627  midroll
+[AdFilter]   [DEAD] regex:\/ad\/  hits=0 miss=627  /\/ad\//
+[AdFilter]   [DEAD] regex:\/ads\/  hits=0 miss=627  /\/ads\//
+[AdFilter]   [DEAD] regex:\/adv\/  hits=0 miss=627  /\/adv\//
+[AdFilter]   [DEAD] regex:_ad_  hits=0 miss=627  /_ad_/
+[AdFilter]   [DEAD] regex:_ads_  hits=0 miss=627  /_ads_/
+[AdFilter]   [HIT] regex:\/adjump  hits=9 miss=618  /\/adjump/ segs=[100,101,102,103,104,105,106,107,…]
+[AdFilter]   summary: effective=1 dead=15 total=16
+[AdFilter] ===== CHUNKS =====
+[AdFilter]   chunk count: 23
+[AdFilter]   context: dominantHost=- medianDur=3.00s
+[AdFilter]   chunk#0(first) n=8 total=26s [1.5~5.7] score=0/thr=0.8 => keep
+[AdFilter]   chunk#1 n=24 total=70.4s [0.9~4.7] score=-0.2/thr=0.6 => keep {long24}
+[AdFilter]   chunk#2 n=26 total=80.3s [1.4~5.3] score=-0.2/thr=0.6 => keep {long26}
+[AdFilter]   chunk#3 n=32 total=95.6s [1.3~5.6] score=-0.5/thr=0.6 => keep {long32+total>90s}
+[AdFilter]   chunk#4 n=10 total=30.4s [1~5.3] score=-0.2/thr=0.6 => keep {long10}
+[AdFilter]   chunk#5 n=9 total=25.8s [1.8~3] score=0.63/thr=0.6 => AD {long9+disc+url-dev+seq-island+rule-weak}
+[AdFilter]   chunk#6 n=3 total=6.5s [1.2~3] score=0.15/thr=0.6 => keep {disc}
+[AdFilter]   chunk#7 n=15 total=47.7s [1.1~4.7] score=-0.2/thr=0.6 => keep {long15}
+[AdFilter]   chunk#8 n=47 total=138.5s [1.1~4.9] score=-0.5/thr=0.6 => keep {long47+total>90s}
+[AdFilter]   chunk#9 n=1 total=5.5s [5.5~5.5] score=-0.1/thr=0.6 => keep {short+single}
+[AdFilter]   chunk#10 n=46 total=137.7s [1.5~5.5] score=-0.5/thr=0.6 => keep {long46+total>90s}
+[AdFilter]   chunk#11 n=16 total=46.2s [0.9~5.4] score=-0.2/thr=0.6 => keep {long16}
+[AdFilter]   chunk#12 n=8 total=25.6s [1.4~5.2] score=0/thr=0.6 => keep
+[AdFilter]   chunk#13 n=21 total=62.4s [0.6~4.6] score=-0.2/thr=0.6 => keep {long21}
+[AdFilter]   chunk#14 n=6 total=18.4s [1.5~4.9] score=0/thr=0.6 => keep
+[AdFilter]   chunk#15 n=30 total=88.7s [1.5~5] score=-0.2/thr=0.6 => keep {long30}
+[AdFilter]   chunk#16 n=72 total=217.6s [0.4~5.2] score=-0.5/thr=0.6 => keep {long72+total>90s}
+[AdFilter]   chunk#17 n=7 total=21s [0.8~5.1] score=0/thr=0.6 => keep
+[AdFilter]   chunk#18 n=64 total=190.1s [0.8~4.7] score=-0.5/thr=0.6 => keep {long64+total>90s}
+[AdFilter]   chunk#19 n=13 total=38.7s [0.4~5.5] score=-0.2/thr=0.6 => keep {long13}
+[AdFilter]   chunk#20 n=70 total=212.2s [1~5.4] score=-0.5/thr=0.6 => keep {long70+total>90s}
+[AdFilter]   chunk#21 n=30 total=87.4s [0.9~4.7] score=-0.2/thr=0.6 => keep {long30}
+[AdFilter]   chunk#22(last) n=69 total=206.6s [0.6~5] score=-0.5/thr=0.7 => keep {long69+total>90s}
+[AdFilter] ===== SUMMARY =====
+[AdFilter]   segments to remove: 9/627
+[AdFilter]   duration to remove: 25.8s / 1879.4s
+[AdFilter]   reasons: rule:regex:\/adjumpx9
+[AdFilter] ===== REMOVED =====
+[AdFilter]   [100] 3s [rule:regex:\/adjump] /video/adjump/time/17932819848870000000.ts
+[AdFilter]   [101] 3s [rule:regex:\/adjump] /video/adjump/time/17932819848870000001.ts
+[AdFilter]   [102] 3s [rule:regex:\/adjump] /video/adjump/time/17932819848870000002.ts
+[AdFilter]   [103] 3s [rule:regex:\/adjump] /video/adjump/time/17932819848870000003.ts
+[AdFilter]   [104] 3s [rule:regex:\/adjump] /video/adjump/time/17932819848870000004.ts
+[AdFilter]   [105] 3s [rule:regex:\/adjump] /video/adjump/time/17932819848870000005.ts
+[AdFilter]   [106] 3s [rule:regex:\/adjump] /video/adjump/time/17932819848870000006.ts
+[AdFilter]   [107] 3s [rule:regex:\/adjump] /video/adjump/time/17932819848870000007.ts
+[AdFilter]   [108] 1.76s [rule:regex:\/adjump] /video/adjump/time/17932819848870000008.ts
+[AdFilter] ===== REBUILD =====
+[AdFilter]   MEDIA-SEQUENCE: untouched
+[AdFilter]   lines: 5/1263 -> 1243
+[AdFilter]   body bytes: 15186 -> 14675
+[AdFilter]   verify: ok (segments=618, disc=1)
+[AdFilter] RESULT: CHANGED (removed 9 segs / 25.8s)
+[AdFilter] DECISION: CHANGED

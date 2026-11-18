@@ -1,0 +1,15 @@
+[AdFilter] ===== ENTRY =====
+[AdFilter]   url: https://vip.lz-cdn13.com/20220725/11652_a547dff8/index.m3u8
+[AdFilter]   bytes: 96
+[AdFilter] ===== PARSE =====
+[AdFilter]   segments: 0
+[AdFilter]   duration: 0.0s
+[AdFilter]   master: true
+[AdFilter]   endlist: false
+[AdFilter] ===== ENV =====
+[AdFilter]   playlist host: vip.lz-cdn13.com
+[AdFilter]   encrypted: no
+[AdFilter]   implicit IV: no
+[AdFilter]   implicit byterange: no
+[AdFilter] RESULT: SKIP (master-playlist)
+[AdFilter] DECISION: PASSTHROUGH

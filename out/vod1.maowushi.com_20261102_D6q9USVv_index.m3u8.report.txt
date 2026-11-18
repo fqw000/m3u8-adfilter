@@ -1,0 +1,15 @@
+[AdFilter] ===== ENTRY =====
+[AdFilter]   url: https://vod1.maowushi.com/20261102/D6q9USVv/index.m3u8
+[AdFilter]   bytes: 119
+[AdFilter] ===== PARSE =====
+[AdFilter]   segments: 0
+[AdFilter]   duration: 0.0s
+[AdFilter]   master: true
+[AdFilter]   endlist: false
+[AdFilter] ===== ENV =====
+[AdFilter]   playlist host: vod1.maowushi.com
+[AdFilter]   encrypted: no
+[AdFilter]   implicit IV: no
+[AdFilter]   implicit byterange: no
+[AdFilter] RESULT: SKIP (master-playlist)
+[AdFilter] DECISION: PASSTHROUGH

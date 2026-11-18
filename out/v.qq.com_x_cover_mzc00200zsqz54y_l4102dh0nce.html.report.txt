@@ -1,0 +1,15 @@
+[AdFilter] ===== ENTRY =====
+[AdFilter]   url: https://v.qq.com/x/cover/mzc00200zsqz54y/l4102dh0nce.html
+[AdFilter]   bytes: 188521
+[AdFilter] ===== PARSE =====
+[AdFilter]   segments: 0
+[AdFilter]   duration: 0.0s
+[AdFilter]   master: false
+[AdFilter]   endlist: false
+[AdFilter] ===== ENV =====
+[AdFilter]   playlist host: v.qq.com
+[AdFilter]   encrypted: no
+[AdFilter]   implicit IV: no
+[AdFilter]   implicit byterange: no
+[AdFilter] RESULT: SKIP (not-m3u8)
+[AdFilter] DECISION: PASSTHROUGH

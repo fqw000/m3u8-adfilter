@@ -1,0 +1,15 @@
+[AdFilter] ===== ENTRY =====
+[AdFilter]   url: https://v13.zuidazym3u8.com/yyv13/202611/16/yMta6gH3TV27/video/index.m3u8
+[AdFilter]   bytes: 102
+[AdFilter] ===== PARSE =====
+[AdFilter]   segments: 0
+[AdFilter]   duration: 0.0s
+[AdFilter]   master: true
+[AdFilter]   endlist: false
+[AdFilter] ===== ENV =====
+[AdFilter]   playlist host: v13.zuidazym3u8.com
+[AdFilter]   encrypted: no
+[AdFilter]   implicit IV: no
+[AdFilter]   implicit byterange: no
+[AdFilter] RESULT: SKIP (master-playlist)
+[AdFilter] DECISION: PASSTHROUGH

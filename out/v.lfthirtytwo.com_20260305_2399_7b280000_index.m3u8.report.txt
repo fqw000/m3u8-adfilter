@@ -1,0 +1,15 @@
+[AdFilter] ===== ENTRY =====
+[AdFilter]   url: https://v.lfthirtytwo.com/20260305/2399_7b280000/index.m3u8
+[AdFilter]   bytes: 96
+[AdFilter] ===== PARSE =====
+[AdFilter]   segments: 0
+[AdFilter]   duration: 0.0s
+[AdFilter]   master: true
+[AdFilter]   endlist: false
+[AdFilter] ===== ENV =====
+[AdFilter]   playlist host: v.lfthirtytwo.com
+[AdFilter]   encrypted: no
+[AdFilter]   implicit IV: no
+[AdFilter]   implicit byterange: no
+[AdFilter] RESULT: SKIP (master-playlist)
+[AdFilter] DECISION: PASSTHROUGH
