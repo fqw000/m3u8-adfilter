@@ -33,3 +33,4 @@ https://vv.jisuzyv.com/play/epY9zQNa/index.m3u8
 
 
 https://p.b8bf.com/video/caifengdejueze/HD/index.m3u8
+https://http://localhost:3000/hls/clean\?url\=https://hn.bfvvs.com/play/bkRwmXEa/index.m3u8
