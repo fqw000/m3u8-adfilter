@@ -2,7 +2,7 @@
 
 /**
  * 离线回归：跑 fixtures 目录下所有样本，比对期望结果
- *   node test/run.js [-v]
+ *   node run-2.js [-v]
  */
 
 const fs = require('fs');
@@ -68,7 +68,7 @@ console.log('-'.repeat(96));
 console.log('通过 ' + pass + ' / ' + (pass + fail) + (fail ? '，失败 ' + fail : ''));
 
 /* 把每个样本的处理后结果落盘，便于肉眼比对 */
-const OUT = path.resolve(__dirname, '..', 'out', 'fixtures');
+const OUT = path.resolve(__dirname, 'out', 'fixtures');
 if (!fs.existsSync(OUT)) fs.mkdirSync(OUT, { recursive: true });
 for (const r of results) {
   if (!r.rebuilt) continue;

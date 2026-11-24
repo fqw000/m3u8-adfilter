@@ -7,13 +7,13 @@
 ```
 m3u8-adfilter/
 ├── lib/filter-playlist.js     核心：解析 → 闸门 → 检测 → 打分 → 重建 → 自校验
-├── bin/run.js                 命令行：抓远程 / 读本地 / 批量 / 落盘
-├── test/
-│   └──  run.js                 离线回归：fixtures 全量比对期望
-└── out/                        过滤后的 m3u8 + 报告
+├── run.js                     命令行：抓远程 / 读本地 / 批量 / 落盘
+├── run-2.js                   离线回归：fixtures 全量比对期望
+├── fixtures/                  17 个可复现广告样本 + expect.json
+├── out/                       过滤后的 m3u8 + 报告
 ├── sgmodules/
-│   └──m3u8AdFilter.sgmodule    surge模块
-│   └──m3u8AdFilter.js          surge模块配套js
+│   ├── m3u8AdFilter.sgmodule   surge模块
+│   └── m3u8AdFilter.js         surge模块配套js
 
 
 ```
@@ -22,22 +22,29 @@ m3u8-adfilter/
 
 ```bash
 # 单条远程
-node bin/run.js --url "https://example.com/index.m3u8"
+node run.js --url "https://example.com/index.m3u8"
 
 # 单条本地文件
-node bin/run.js --file fixtures/01-scte-cueout.m3u8
+node run.js --file fixtures/01-scte-cueout.m3u8
 
 # 整个目录批量
-node bin/run.js --dir fixtures
+node run.js --dir fixtures
 
 # 一批 URL（每行一个，# 开头为注释）
-node bin/run.js --list urls.txt --json
+node run.js --list urls.txt --json
 
 # 只观察不改写（推荐先用这个跑真实片源）
-node bin/run.js --url "https://..." --dry-run --verbose
+node run.js --url "https://..." --dry-run --verbose
 ```
 
 产物：`out/<slug>.report.txt`（完整日志）、`out/<slug>.filtered.m3u8`（仅在改动时生成）、`out/summary.json`（加 `--json` 时）。
+
+离线回归（不需要外网，比对 `fixtures/expect.json` 的 verdict / removedCount）：
+
+```bash
+node run-2.js -v
+# 清洗后样本写入 out/fixtures/
+```
 
 ## 核心设计（为什么不是"打标签就删行"）
 
@@ -68,7 +75,7 @@ node bin/run.js --url "https://..." --dry-run --verbose
 浏览器 / 抓包 / 代理把真实 `m3u8` 原文存到 `fixtures/real/`，然后：
 
 ```bash
-node bin/run.js --dir fixtures/real --dry-run --verbose
+node run.js --dir fixtures/real --dry-run --verbose
 ```
 
 先看 `CHUNKS` 的打分和 `REMOVED` 候选是否合理，再决定是否去掉 `--dry-run`。真实片源的 URI 常带签名参数，建议直接用原始 URL 跑（`--url`），因为签名会影响"命名特征"的判断。
